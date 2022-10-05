@@ -1,0 +1,9 @@
+// STARTING NEW NODE/EXPRESS PACKAGE
+
+npm init
+npm install express
+const express = require('express');
+const app = express();
+app.listen(4494);
+
+In package-json file: "start": "node index.js" under script
