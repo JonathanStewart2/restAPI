@@ -7,3 +7,27 @@ const app = express();
 app.listen(4494);
 
 In package-json file: "start": "node index.js" under script
+
+------------------
+HTTP RECAP
+
+Hypertext Transfer Procotol - send text over the internet
+
+REST - REpresentational State Transfer - standard for building APIs ->
+- use JSON instead of XML, certain methods for this:
+- GET - read
+- POST - create
+- PUT/PATCH - - update (put = whole, patch = some of data)
+- DELETE - delete 
+Request / Response -> send response, wait for response.
+REQUEST contains URL, headers (metadata), body (content), method.
+RESPONSE: same as REQUEST but also contains status codes
+
+status codes:   1xx - infor
+                2xx - successful
+                3xx - redirect
+                4xx - client error
+                5xx - server error
+
+
+URL parameter: http://localhost:4494/removeDuck/1     -the 1 is an ID
